@@ -1,6 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+
+# Bootstrap starter template {#bootstrap-starter-template}
+
+Use this document as a way to quickly start any new project. \\
+All you get is this text and a mostly barebones HTML document.
+{: .lead }
