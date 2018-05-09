@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
+        "prod": "npm run production",
+        "production": "npm run webpack:build && npm run jekyll:build",
+        "clean": "rimraf _site _data/mix-manifest.json .sass-cache  .jekyll-metadata mix-manifest.json",
+        "jekyll:serve": "jekyll serve",
+        "jekyll:build": "jekyll build",
+        "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "cross-env": "^5.1.4",
+        "fs-extra": "^6.0.0",
+        "laravel-mix": "^2.1.11",
+        "rimraf": "^2.6.2"
+    },
+    "dependencies": {}
+}
