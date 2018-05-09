@@ -12,6 +12,8 @@ let mix = require('laravel-mix'), fs = require('fs-extra');
  */
 
 mix.setPublicPath('_site')
+   .options({ processCssUrls: false })
    .js('_resources/js/app.js', 'js')
    .sass('_resources/sass/app.scss', 'css')
+   .version()
    .then(() => fs.copy('_site/mix-manifest.json', '_data/mix-manifest.json'));
