@@ -12,15 +12,18 @@
         "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "concurrently": "^3.5.1",
-        "cross-env": "^5.1.4",
-        "fs-extra": "^6.0.0",
-        "laravel-mix": "^2.1.11",
-        "popper.js": "^1.14.3",
-        "rimraf": "^2.6.2"
+        "concurrently": "^3.6.1",
+        "cross-env": "^5.2.0",
+        "fs-extra": "^6.0.1",
+        "laravel-mix": "^4.1.2",
+        "popper.js": "^1.15.0",
+        "rimraf": "^2.7.1",
+        "sass": "^1.22.10",
+        "sass-loader": "^7.3.1",
+        "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "bootstrap": "^4.1.1",
-        "jquery": "^3.3.1"
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1"
     }
 }
